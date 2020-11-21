@@ -1,8 +1,7 @@
 pipeline {
 
-  agent {
-    any
-  }
+  agent any
+  
 
   parameters { 
     choice(name: 'PERFORMANCE_TEST_IN_DEV', choices: ['no', 'yes'], description: 'Do you wish to perform performance testing in DEV environment on this build?')
